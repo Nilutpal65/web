@@ -14,7 +14,8 @@
         <link rel="stylesheet" type="text/css" href="css/style_common.css" />
         <link rel="stylesheet" type="text/css" href="css/style1.css" />
         <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,300,300italic' rel='stylesheet' type='text/css' />
-        <script type="text/javascript" src="js/modernizr.custom.69142.js"></script> 
+        <script type="text/javascript" src="js/modernizr.custom.69142.js"></script>
+        <script type="text/javascript" src="js/jquery.flexisel.js"></script> 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
 
@@ -413,17 +414,55 @@ The sooner we embed these ideas into daily practice, the more we would prepare o
         </div>
     </section-->
    
-    <section class="bg-primary" id="clients">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">Our Clients!</h2>
-                    <hr class="light">
-                    <p class="text-faded">Check out our full list of clients</p>
+    <section class="" id="clients">
+        <div class="">
+            
+                    <h2 class="client-speak">Client Speak</h2>
+                    
+<div id="slideshow">
+			<div id="slideshowWindow">
+			
+				<div class="slide">
+					<!-- External image place holder.Learn more from [placehold.it] -->
+					<img src="img/sponser/1.jpg" />
+					<h3>Prasannavadhani Rajan</h3>
+					<h4 style="color:green">Marketing Manager Make My Trip</h4>
+					<span class="inf">
+					QE has been so helpful...they have helped me right from setting up a Store to Branding to any BTL activation or ATL activation and many more... The best part is I can get all of this for any location in the country. The minute I post a request I get a minimum of 3 best quotes and I wonder how u guys do it so quick.  Hats off .Thanks a lot to Nehal who is been making my work so easy. Cheers!!!
+					</span>
+				</div><!--/slide-->
+				
+				<div class="slide">
+					<img src="img/sponser/2.jpg" />
+					<h3>Prasannavadhani Rajan</h3>
+					<h4 style="color:green">Marketing Manager Make My Trip</h4>
+					QE has been so helpful...they have helped me right from setting up a Store to Branding to any BTL activation or ATL activation and many more... The best part is I can get all of this for any location in the country. The minute I post a request I get a minimum of 3 best quotes and I wonder how u guys do it so quick.  Hats off .Thanks a lot to Nehal who is been making my work so easy. Cheers!!!
 
-                    <a href="#" class="btn btn-default btn-xl page-scroll">See All</a>
-                </div>
-            </div>
+
+				
+				</div><!--/slide-->
+				
+				<div class="slide">
+					<img src="img/sponser/3.jpg" />
+					<h3>Prasannavadhani Rajan</h3>
+					<h4 style="color:green">Marketing Manager Make My Trip</h4>
+					QE has been so helpful...they have helped me right from setting up a Store to Branding to any BTL activation or ATL activation and many more... The best part is I can get all of this for any location in the country. The minute I post a request I get a minimum of 3 best quotes and I wonder how u guys do it so quick.  Hats off .Thanks a lot to Nehal who is been making my work so easy. Cheers!!!
+			
+				</div><!--/slide-->
+
+<div class="slide">
+					<img src="img/sponser/3.jpg" />
+					<h3>Prasannavadhani Rajan</h3>
+					<h4 style="color:green">Marketing Manager Make My Trip</h4>
+					QE has been so helpful...they have helped me right from setting up a Store to Branding to any BTL activation or ATL activation and many more... The best part is I can get all of this for any location in the country. The minute I post a request I get a minimum of 3 best quotes and I wonder how u guys do it so quick.  Hats off .Thanks a lot to Nehal who is been making my work so easy. Cheers!!!
+			
+				</div><!--/slide-->
+			</div><!--/slideshowWindow-->
+		</div><!--/slideshow-->                    
+                    
+                    <span class="tab"></span>
+                    <a href="#" class="btn btn-primary btn-xl page-scroll">Check out our full list of client companies</a>
+            
         </div>
     </section>
 
@@ -470,7 +509,62 @@ The sooner we embed these ideas into daily practice, the more we would prepare o
 
     <!-- Custom Theme JavaScript -->
     <script src="js/creative.js"></script>
+    <script type="text/javascript">
+  $(document).ready(function() {
+		
+		
+   /** 
+    * The first variable records which slide currently showing. The slideWidth variable is self explanatory. 
+    * Next we have a variable called slides which lets us refer to our slides in the jQuery code and the last  
+    * variable gives us the number of slides in our slideshow. 
+    */
+		var currPosition = 0;
+		var slideWidth = 500;
+		var slides = $('.slide');
+		var numberOfSlides = slides.length;
+		var slideInterval;
+		var speed = 3000;
+		
+		
+   /** 
+    * To get the slides to line up across the page, we need to add another div. We're going to do this with jQuery.
+    * This div will hold all the slides and allow the float:left property to work. 
+    */
+		slideInterval = setInterval(changePosition, speed);
+		
+		slides.wrapAll('<div id="slidesHolder"></div>')
+		
+		slides.css({ 'float' : 'left' });
+		
+		$('#slidesHolder').css('width', slideWidth * numberOfSlides);
+		
+				
+	/**
+   * The first part of the if/else statement deals with when reach the end of the slide show.
+   * When we come to the last slide we want to jump back to the beginning, otherwise the currentSlide
+   * variable is simply incremented by 1 and then another function moveSlide is called. 
+   */
+		function changePosition() {
+			if(currPosition == numberOfSlides - 1) {
+				currPosition = 0;
+			} else {
+				currPosition++;
+			}
+			moveSlide();
+		}
+		
+    
+   /**
+		* This function sets the left margin of the slidesHolder div to the width of the slide multiplied by
+    * the slide number and then animates to that from the current left margin 
+    */
+		function moveSlide() {
+				$('#slidesHolder')
+				.animate({'marginLeft' : slideWidth*(-currPosition)});
+		}
 
+	});
+    </script>
         <script type="text/javascript"> 
             
             Modernizr.load({
@@ -485,8 +579,11 @@ The sooner we embed these ideas into daily practice, the more we would prepare o
 
                 }
             });
-                
+               
         </script>
+   
+
+
 
 </body>
 

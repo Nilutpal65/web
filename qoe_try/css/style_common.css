@@ -146,5 +146,39 @@
 
 span.tab{
 	
-    padding: 0 220px; /* Or desired space*/
+    padding: 0 250px; /* Or desired space*/
+}
+
+
+#slideshow #slideshowWindow {
+  width:1000px;
+	height:500px;
+	margin:0px auto;
+	padding:0;
+	position:relative;
+	overflow:hidden;
+}
+
+#slideshow #slideshowWindow .slide {
+	font-style: bold;
+	margin:0;
+	padding:0;
+	width:500px; 
+	height:500px;
+	float:left;
+	position:relative;
+}
+
+.client-speak{
+	font-style:italic;
+	text-align: center;
+}
+.inf{
+	
+	font-style:italic;	
+}
+.sponser-bottom{
+	
+	font-style:italic;	
+	text-align: center;
 }
