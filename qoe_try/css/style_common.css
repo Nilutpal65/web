@@ -182,3 +182,13 @@ span.tab{
 	font-style:italic;	
 	text-align: center;
 }
+
+<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+    h3:after {
+        content : 'Welcome to Quantum of Excellence';
+        color: #f05f40;;
+        text-shadow: 0 1px 0 white;
+        font-size: 70px;
+        font-weight: bold;
+    }
+     
