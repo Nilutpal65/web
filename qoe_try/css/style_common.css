@@ -55,7 +55,8 @@
 	width: 100%;
 	text-align: right;
 	font-size: 16px;
-	color: rgba(255,255,255,0.6);
+	/* color: rgba(255,255,255,0.6); */
+	color: rgba(7,12,109,0.6);
 }
 
 .view-back span:first-child {
@@ -157,6 +158,7 @@ span.tab{
 	padding:0;
 	position:relative;
 	overflow:hidden;
+	background-color: white;
 }
 
 #slideshow #slideshowWindow .slide {
@@ -167,20 +169,24 @@ span.tab{
 	height:500px;
 	float:left;
 	position:relative;
+	background-color: white;
 }
 
 .client-speak{
 	font-style:italic;
 	text-align: center;
+	background-color: white;
 }
 .inf{
 	
 	font-style:italic;	
+	background-color: white;
 }
 .sponser-bottom{
 	
 	font-style:italic;	
 	text-align: center;
+	background-color: white;
 }
 
 <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>

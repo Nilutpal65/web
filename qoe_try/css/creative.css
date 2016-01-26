@@ -301,7 +301,7 @@ header .header-content .header-content-inner p {
 }
 
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
-    font-size: 18px;
+    font-size: 100px;
 }
 
 .portfolio-box:hover .portfolio-box-caption {
@@ -402,7 +402,7 @@ fieldset[disabled] .btn-default.active {
     border-color: #ed431f;
     color: #fff;
     background-color: #ee4b28;
-}
+}   
 
 .btn-primary:active,
 .btn-primary.active,
@@ -474,3 +474,23 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: #222;
 }
+
+.section-heading{
+     text-shadow: 0px 3px 0px #b2a98f,
+                 0px 14px 10px rgba(0,0,0,0.15),
+                 0px 24px 2px rgba(0,0,0,0.1),
+                 0px 34px 30px rgba(0,0,0,0.1);
+}
+.main-img{
+    width: 50px;
+    height: 50px;
+}
+#bs-example-navbar-collapse-1 li:hover ul{ 
+    
+  opacity:0;
+
+}
+
+
+
+
