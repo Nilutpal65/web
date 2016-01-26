@@ -493,16 +493,30 @@ body {
     text-transform: none;
     position: fixed;
     font-weight: bold;
+    
+
+}
+
+.sub-menu-drop li{
+    outline-color: black;
+    position: relative;
+    display: block;
 
 }
 
 
-.sub-menu-drop:hover,
-.sub-menu-drop:focus,
-.sub-menu-drop:active {
-    color:rgb(50,50,50);
+.sub-menu-drop li a{
+    text-decoration: none;
+    color: white;
 
 }
+
+.sub-menu-drop li:hover{
+    opacity: 0.5;
+
+}
+
+
 
 
 
