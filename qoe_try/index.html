@@ -66,16 +66,18 @@
                     <li>
                         <a class="page-scroll" href="#problem">Problem-solving</a>
                     </li>                    
-                    <li>
+
+                    <li class="dropdown">
                         <a class="page-scroll" href="#services" >Services</a>
-                        <div id="horizontalmenu">
-                           <ul>
-                        	<li>Corporate Training</li>
-                        	<li>Recruitment Processes Outsourcing</li>
-                        	<li>Career Acceleration</li>
+                        
+                           <ul class="sub-menu-drop">
+                        	<li> <a href="#corpTr">Training</a></li>
+                        	<li> <a href="#carAc">Recruitment</a></li>
+                        	<li> <a href="#PlaTa">Career</a></li>
                         </ul>
-                       </div>
-                    </li>
+                       
+                    </li>  
+
                     <li>
                         <a class="page-scroll" href="#portfolio">Portfolio</a>
                     </li>
@@ -85,11 +87,11 @@
                     <li>
                         <a class="page-scroll" href="#achievements">Achievement</a>
                     </li>
-                    <li>
+                    <li class="dropdown">
                         <a class="page-scroll" href="#materials" >materials</a>
-                        <ul>
-                        	<li>resources</li>
-                        	<li>gallery</li>
+                        <ul class="sub-menu-drop">
+                        	<li> <a href="#resources">resources</a></li>
+                        	<li> <a href="#gallery">gallery</a></li>
                         </ul>
                     </li>
 
@@ -99,6 +101,8 @@
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>
                     </li>
+
+                  
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -478,6 +482,19 @@ Tips for Resume Building -We should always remember that one’s resume is the f
                 }
             });
                
+        </script>
+        <script type="text/javascript">
+
+$(document).ready(function(){
+  $('.dropdown').hover(
+    function(){
+    $(this).children('.sub-menu-drop').slideDown(200) ;
+    },
+    function(){
+    $(this).children('.sub-menu-drop').slideUp(200);
+    }
+  );
+})
         </script>
    
 
