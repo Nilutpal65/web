@@ -192,9 +192,13 @@ span.tab{
 <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
     h3:after {
         content : 'Welcome to Quantum of Excellence';
-        color: #f05f40;;
+        color: rgba(90,25,200,0.7);
         text-shadow: 0 1px 0 white;
         font-size: 70px;
         font-weight: bold;
     }
-     
+.mail:hover{
+	color: rgba(12,95,240,.7);
+	text-decoration: none;
+}
+
