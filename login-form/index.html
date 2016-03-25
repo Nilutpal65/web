@@ -1,0 +1,74 @@
+<! DOCTYPE html>
+<html lang="en">
+<title>Simple Login Form</title>
+<head>
+<style type="text/css">
+body
+{
+	overflow: hidden;
+}
+	.login-logo
+	{
+		height: 100px;
+		width: 400px;
+		float: left;
+		margin-top: -500px;
+	}
+</style>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
+<img class="login-logo" src="logo.png">
+</head>
+
+<body>
+
+	<div class="container">
+		<div class="row">
+			 <div class="col s12 col m8 push-m2  col l6 push-l3">
+			 	 <div class="card-panel white z-depth-5">
+			 	 	 <!--img id ="user-img" src="img/user.png"-->
+			 	 	 
+			 	 	 <h5>Writer</h5>
+			 	 	  <div class="row">
+					    <form class="col s12">
+					      <div class="row">
+					        <div class="input-field col s12">
+					          <input id="first-name" type="text" class="validate" length="10" required>
+					          <label for="first-name">Your Email ID</label>
+					        </div>
+					        </div>
+					      <div class="row">
+					        <div class="input-field col s12">
+					          <input id="password" type="password" class="validate" length="15" required>
+					          <label for="password">Password</label>
+					        </div>
+					      </div>
+					             <div class="input-field col s12 m12 l12  login-text">
+              <input type="checkbox" id="remember-me" />
+              <label for="remember-me" style="float:left;">Remember me</label>
+          </div>
+        </div>	
+					      <div class="row">
+					      	<div class="col s12">
+							  <button id="submitBtn" class="btn waves-effect waves-light" type="submit" name="action">login
+							  </button>
+							 </div>
+							</div>
+						        <div class="row">          
+   
+					    </form>
+					  </div>
+					  <a href="login.html">Forgot password?</a>
+			 	 </div>
+			 </div>
+		</div>
+	</div>
+
+
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
+</body>
+</html>
+          
+
+
