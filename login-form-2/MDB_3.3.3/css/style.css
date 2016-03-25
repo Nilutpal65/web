@@ -1,0 +1,26 @@
+.logo-login
+{
+	position: absolute;
+    top: 29px;
+    left: 37px;
+    height: 53px;
+    width: 226px;
+}
+.form-control
+{
+	width: 100px;
+}
+.login-header
+{
+	font-family: nesia;
+	text-align: center;
+}
+       a:link {color: grey;}      /* unvisited link */
+       a:visited {color:  grey;}         /* visited link */
+       a:hover {color: black;}     /* mouse over link */
+       a:active {color: black;}
+.forgot-password
+{
+	text-decoration: none;	
+	font-size: 1rem;
+}
